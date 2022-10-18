@@ -1,2 +1,2 @@
 # 42-havuz
-peogramların bazıları çalışmayabilir. yarıda bıraktığım projeler dahildir.
+programların bazıları çalışmayabilir. yarıda bıraktığım projeler dahildir.
