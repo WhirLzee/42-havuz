@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:58:44 by alsay             #+#    #+#             */
-/*   Updated: 2022/10/28 17:01:39 by alsay            ###   ########.fr       */
+/*   Updated: 2022/10/28 17:18:55 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_str_is_lowercase(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -27,15 +27,15 @@ int	ft_str_is_lowercase(char *str)
 	}
 	return (1);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
 {
-	char str[]	= "asdfghj";
+	char str[]	= "asdf3ghj";
 
 	printf("%d\n", ft_str_is_lowercase(str));
 
 	return (0);
 }
-
+*/
