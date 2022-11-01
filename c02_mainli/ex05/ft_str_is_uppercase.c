@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 19:44:34 by alsay             #+#    #+#             */
-/*   Updated: 2022/10/30 23:25:57 by alsay            ###   ########.fr       */
+/*   Created: 2022/11/01 04:04:40 by alsay             #+#    #+#             */
+/*   Updated: 2022/11/01 04:09:34 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include <unistd.h>
 
-char	*ft_strcpy(char *ikinci, char *birinci)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (birinci[i] != '\0')
+	while (str[i] != '\0')
 	{
-		ikinci[i] = birinci[i];
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
+		{
+			return (0);
+		}
 		i++;
 	}
-	ikinci[i] = '\0';
-	return (ikinci);
+	return (1);
 }
 /*
 #include <stdio.h>
 
 int main(void)
 {
-	char birinci[] = "aaaaaaaaaaaaa"; 
-	char ikinci[] = "bbbbbbbb";
+	char str[]	= "ALKSAJLSAa";
 
-	printf("kopyadan önce birinci dizi: %s\n", birinci);
-	printf("kopyadan önce ikinci dizi: %s\n\n", ikinci);
-
-	ft_strcpy(ikinci, birinci);
-
-	printf("kopyadan sonra ikinci dizi: %s\n", ikinci);
+	printf("%d\n", ft_str_is_lowercase(str));
 
 	return (0);
 }
