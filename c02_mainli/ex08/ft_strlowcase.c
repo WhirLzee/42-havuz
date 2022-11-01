@@ -1,40 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/01 04:17:03 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 04:41:22 by alsay            ###   ########.fr       */
+/*   Created: 2022/11/01 04:43:01 by alsay             #+#    #+#             */
+/*   Updated: 2022/11/01 04:46:41 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_str_is_printable(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!(str[i] >= 32 && str[i] <= 126))
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			return (0);
+			str[i] = str[i] + 32;
 		}
 		i++;
 	}
-	return (1);
+	return (str);
 }
 /*
 #include <stdio.h>
 
 int main(void)
 {
-	char str[]	= "aa\naa";
+	char str[]	= "LOLOLaaa";
 
-	printf(" %d ", ft_str_is_printable(str));
+	printf(" %s", ft_strlowcase(str));
 
 	return (0);
 }
