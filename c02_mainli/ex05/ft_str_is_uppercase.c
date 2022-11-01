@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 04:04:40 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 04:09:34 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:44:26 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ int	ft_str_is_lowercase(char *str)
 	}
 	return (1);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char str[]	= "ALKSAJLSAa";
-
-	printf("%d\n", ft_str_is_lowercase(str));
-
-	return (0);
-}
-*/

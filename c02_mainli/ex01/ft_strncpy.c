@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:55:16 by alsay             #+#    #+#             */
-/*   Updated: 2022/10/28 14:22:07 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:45:33 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,3 @@ char	*ft_strncpy(char *hedef, char *kaynak, unsigned int n)
 	hedef[i] = '\0';
 	return (hedef);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char kaynak[] = "aaaaaaaaaa";
-	char hedef[] = "bbbbbbbbbb";
-	int n = 4;
-
-  printf("%s\n", hedef);
-  ft_strncpy(hedef, kaynak, n);
-  printf("%s\n", hedef); 
-}
-*/

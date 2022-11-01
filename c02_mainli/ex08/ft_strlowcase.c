@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 04:43:01 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 04:46:41 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:42:44 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char str[]	= "LOLOLaaa";
-
-	printf(" %s", ft_strlowcase(str));
-
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 19:44:34 by alsay             #+#    #+#             */
-/*   Updated: 2022/10/30 23:25:57 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:45:50 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,21 +25,3 @@ char	*ft_strcpy(char *ikinci, char *birinci)
 	ikinci[i] = '\0';
 	return (ikinci);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char birinci[] = "aaaaaaaaaaaaa"; 
-	char ikinci[] = "bbbbbbbb";
-
-	printf("kopyadan önce birinci dizi: %s\n", birinci);
-	printf("kopyadan önce ikinci dizi: %s\n\n", ikinci);
-
-	ft_strcpy(ikinci, birinci);
-
-	printf("kopyadan sonra ikinci dizi: %s\n", ikinci);
-
-	return (0);
-}
-*/

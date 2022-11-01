@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 04:17:03 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 04:41:22 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:44:03 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ int	ft_str_is_printable(char *str)
 	}
 	return (1);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char str[]	= "aa\naa";
-
-	printf(" %d ", ft_str_is_printable(str));
-
-	return (0);
-}
-*/

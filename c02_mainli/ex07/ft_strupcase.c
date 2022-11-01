@@ -6,7 +6,7 @@
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 04:31:57 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 04:40:12 by alsay            ###   ########.fr       */
+/*   Updated: 2022/11/01 13:43:33 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char str[]	= "aawER";
-
-	printf(" %s", ft_strupcase(str));
-
-	return (0);
-}
-*/

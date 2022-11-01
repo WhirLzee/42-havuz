@@ -1,29 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alsay <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/28 15:37:00 by alsay             #+#    #+#             */
-/*   Updated: 2022/11/01 13:44:59 by alsay            ###   ########.fr       */
+/*   Created: 2022/11/01 13:47:51 by alsay             #+#    #+#             */
+/*   Updated: 2022/11/01 13:48:12 by alsay            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_str_is_numeric(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
-	{
-		if (!(str[i] >= 48 && str[i] <= 57))
-		{
-			return (0);
-		}
 		i++;
+	return (i);
+}
+
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	i;
+	unsigned int	x;
+
+	x = ft_strlen(src);
+	i = 0;
+	if (size != 0)
+	{
+		while (src [i] != '\0' && i < size - 1)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
-	return (1);
+	return (x);
 }
